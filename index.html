@@ -11,6 +11,10 @@
     <style>
       @media only screen and (max-width: 1000px) {
         .menu {
+          display: none;
+        }
+        
+        .menu-mobile {
           width: 100%;
           height: 40px;
           display: flex;
@@ -19,7 +23,7 @@
           transition: all 0.5s ease-in-out;
         }
 
-        #menu-shower{
+        #menu-shower-mobile{
           display: block;
           line-height: 40px;
           color: rgb(255, 255, 255);
@@ -27,36 +31,36 @@
           margin: 0px;
         }
 
-        .menu:hover{
+        .menu-mobile:hover{
           height: 279px;
         }
 
-        .menu:hover ul > li > a{
+        .menu-mobile:hover ul > li > a{
           display:block;
           line-height: 40px;
           color: rgb(255, 255, 255);
           margin: 0px;
         }
 
-        .menu:hover ul > li > #menu-shower{
+        .menu-mobile:hover ul > li > #menu-shower-mobile{
           margin-left: -30%;
           width: 100%;
           font-size: 28px;
           background-color: black;
         }
 
-        .menu > ul {
+        .menu-mobile > ul {
           width: 100%;
         }
 
-        .menu> ul >li {
+        .menu-mobile > ul >li {
           display:block;
           text-align: center;
           width:100%; /*збільшивши довжину кожного елементу на 100% було отримано ефект альбомного меню*/
           padding: 0px;
         }
 
-        .menu > ul > li > a {
+        .menu-mobile > ul > li > a {
           color: rgb(255, 255, 255);
           font-size: 20px;
           line-height: 0px;
@@ -68,7 +72,7 @@
           margin-left: -1300px;
         }
 
-        .menu > ul > li > a:hover{
+        .menu-mobile > ul > li > a:hover{
           background: orchid;
           font-size: 25px;
         }
@@ -79,21 +83,21 @@
       }
 
       @media only screen and (max-width: 665px) {
-        #menu-shower{
+        #menu-shower-mobile{
           display: block;
         }
 
-        .menu:hover{
+        .menu-mobile:hover{
           height: 279px;
         }
 
-        .menu:hover ul > li > a {
+        .menu-mobile:hover ul > li > a {
           display:block;
           padding: 0px;
         }
 
 
-        .menu > ul >li {
+        .menu-mobile > ul >li {
           text-align: center;
         }
 

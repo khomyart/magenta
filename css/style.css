@@ -61,6 +61,7 @@ body {
     z-index: 1000;
 }
 
+/*PC MENU*/
 .menu {
     height: 40px;
     display: flex;
@@ -90,10 +91,43 @@ body {
     background: orchid;
     font-size: 25px;
 }
+/*PC MENU*/
+
+/*MOBILE MENU*/
+.menu-monile {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu-shower-mobile{
+   display: none;
+}
+
+.menu-mobile > ul >li {
+    float: left;
+}
+
+.menu-mobile > ul > li > a {
+    color: white;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0px 3vw;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-mobile > ul > li > a:hover{
+    background: orchid;
+    font-size: 25px;
+}
 
 .menu-mobile {
     display:none;
 }
+/*MOBILE MENU*/
 
 .content-container {
     display: flex;
