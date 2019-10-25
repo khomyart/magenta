@@ -3,18 +3,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" media="all">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
     <title>Мажента прінт | Головна сторінка</title>
     <style>
       @media only screen and (max-width: 1000px) {
-        .menu {
+        .menu-parent {
+          position: sticky; /*меню завжди на екрані*/
+        }
+
+        .menu { /*меню для пк сховане*/
           display: none;
         }
-        
-        .menu-mobile {
+
+        .menu-mobile { 
+          position: sticky;
           width: 100%;
           height: 40px;
           display: flex;
@@ -77,12 +82,59 @@
           font-size: 25px;
         }
 
+        .content-text {
+          border: 2px solid rgba(255, 255, 255, 0.075);
+          border-top: none;
+          background: rgba(255, 255, 255, 0.205);
+          border-radius: 0 0 20px 20px;
+          text-align: center;
+          line-height: 25px;
+          padding: 27px 12px 14px 12px;
+          margin-bottom: 13px;
+          font-family: 'Noto Sans', sans-serif;
+        }
+
         .content-container {
           width: 650px;
+        }
+
+        .logo-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 20px;
+          border-top: 2px solid rgb(0, 0, 0);
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          margin-top: 50px;
+          margin-left: 0px;
+        }
+
+        .logo-container > div > img {
+          margin-left: 12px;
+          width: 180px;
+          transition: all 0.25s ease-in-out;
+        }
+
+        #middle-logo {
+          margin-left: -0px;
+        }
+
+        #last-logo {
+          padding-right:20px;
         }
       }
 
       @media only screen and (max-width: 665px) {
+        .menu-parent {
+          position: sticky;
+        }
+
+        .menu-mobile {
+          position: sticky;
+        }
+
         #menu-shower-mobile{
           display: block;
         }
@@ -95,7 +147,6 @@
           display:block;
           padding: 0px;
         }
-
 
         .menu-mobile > ul >li {
           text-align: center;
@@ -111,11 +162,16 @@
         }
 
         .logo-container {
+          display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
           padding-top: 20px;
-          border-top: 2px solid black;
+          border-top: 2px solid rgb(0, 0, 0);
+          border-radius: 20px 20px 0 0;
+          width: 100%;
+          margin-top: 50px;
+          margin-left: 0px;
         }
 
         .logo-container > div > img {
@@ -154,7 +210,7 @@
         <div class="menu-mobile"> <!--Панель меню-->
           <ul>
             <li><a id="menu-shower-mobile">Меню</a></li>
-            <li><a href="index.html">Головна</a></li>
+            <li><a style="border-top: 1px solid white;" href="index.html">Головна</a></li>
             <li><a href="print.html">Друк</a></li>
             <li><a href="clothes.html">Одяг</a></li>
             <li><a href="gallery.html">Галерея</a></li>
@@ -194,10 +250,10 @@
               <img src="/img/fotl.png">
             </div>
             <div>
-              <img src="/img/sted.png">
+              <img id="middle-logo" src="/img/sted.png">
             </div>
             <div>
-              <img style ="width:130px;" src="img/mb.png">
+              <img id="last-logo" src="img/mb.png">
             </div>
           </div>
       </div>

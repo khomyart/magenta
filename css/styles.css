@@ -1,0 +1,206 @@
+* { 
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    padding: 0px; 
+    background-color: orchid;
+}
+
+.grand-parent {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.header-logo {
+    padding-top: 15px;
+}
+
+.header-logo img {
+    transition: all 0.25s ease-in-out;
+}
+
+.header-logo img:hover {
+    transform: scale(1.05);
+}
+
+.header-text {
+    text-align: center;
+    line-height: 40px;
+    padding: 10px 0 20px 0;
+    text-shadow: white 0 0 30px;
+}
+
+.header-text > H1 {
+    font-family: 'Noto Sans', sans-serif; 
+    font-size: 33px;
+}
+
+.menu-parent {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+/*PC MENU*/
+.menu {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu-shower{
+   display: none;
+}
+
+.menu > ul >li {
+    float: left;
+}
+
+.menu > ul > li > a {
+    color: white;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0px 2.5vw;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.menu > ul > li > a:hover{
+    background: orchid;
+    font-size: 25px;
+}
+/*PC MENU*/
+
+/*MOBILE MENU*/
+.menu-monile {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#menu-shower-mobile{
+   display: none;
+}
+
+.menu-mobile > ul >li {
+    float: left;
+}
+
+.menu-mobile > ul > li > a {
+    color: white;
+    display: block;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0px 3vw;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.menu-mobile > ul > li > a:hover{
+    background: orchid;
+    font-size: 25px;
+}
+
+.menu-mobile {
+    display:none;
+}
+/*MOBILE MENU*/
+
+.content-container {
+    display: flex;
+    width: 970px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-text {
+    border: 2px solid rgba(255, 255, 255, 0.075);
+    border-top: none;
+    background: rgba(255, 255, 255, 0.205);
+    border-radius: 0 0 20px 20px;
+    text-align: center;
+    line-height: 25px;
+    padding: 27px 0 14px 0;
+    margin-bottom: 13px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.content-text p {
+    font-weight: bolder;
+}
+
+.content-image{
+    padding-top: 11px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.205);
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.075);
+}
+
+.content-image div img{
+    border: 1px solid black;
+    border-radius: 5%;
+    width: 300px;  
+    transition: all 0.2s ease-in-out;
+    margin: 0 10px 10px 10px;
+}
+
+.content-image div img:hover{
+    transform: scale(1.05);
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    width: 75%;
+    margin-top: 30px;
+    padding-top: 20px;
+    margin-left: -20px;
+}
+
+.logo-container > div > img {
+    width: 180px;
+    transition: all 0.25s ease-in-out;
+}
+
+#middle-logo{
+    margin-left: -15px;
+}
+
+#last-logo {
+    width:130px;
+}
+
+.footer {
+    height:50px;
+}
